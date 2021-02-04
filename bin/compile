@@ -9,8 +9,7 @@ echo "-----> Installing USD"
 git clone https://github.com/PixarAnimationStudios/USD
 pwd
 ls
-apt remove cmake
-pip install cmake --upgrade
+apt-get install cmake=3.16.3
 python USD/build_scripts/build_usd.py /usr/local/USD
 
 echo "DONE"
