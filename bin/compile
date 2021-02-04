@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+indent() {
+  sed -u 's/^/       /'
+}
+
 echo "-----> Installing USD"
 
-git clone https://github.com/PixarAnimationStudios/USD
+python -V
 
-echo "    DONE"
+echo "DONE"
