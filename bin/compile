@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "-----> Installing USD"
+
+git clone https://github.com/PixarAnimationStudios/USD
+
+echo "    DONE"

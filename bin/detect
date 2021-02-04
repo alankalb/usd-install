@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo 'USD-build'
+exit 0
