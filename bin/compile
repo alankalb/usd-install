@@ -6,6 +6,9 @@ indent() {
 
 echo "-----> Installing USD"
 
-python -V
+git clone https://github.com/PixarAnimationStudios/USD
+pwd
+ls
+python USD/build_scripts/build_usd.py /usr/local/USD
 
 echo "DONE"
