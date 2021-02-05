@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
-echo 'USD-build'
-exit 0
+if [ -f $1/USD/build_scripts/build_usd.py ]; then
+  echo "USD install"
+  exit 0
+else
+  exit 1
+fi
