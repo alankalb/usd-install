@@ -7,6 +7,6 @@ indent() {
 echo "-----> Installing USD"
 
 apt-get install libgl1-mesa-dev | indent
-python $1/USD/build_scripts/build_usd.py $1/USD-build --no-usdview| indent
+python $1/USD/build_scripts/build_usd.py $1/USD-build --build-args USD,"PXR_ENABLE_GL_SUPPORT=FALSE PXR_BUILD_IMAGING=FALSE PXR_ENABLE_PTEX_SUPPORT=FALSE XR_BUILD_USD_IMAGING=FALSE PXR_BUILD_USDVIEW=FALSE" --no-imaging --no-examples --no-tutorials --no-usdview| indent
 
 echo "DONE"
