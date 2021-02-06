@@ -373,6 +373,7 @@ def RunCMake(context, force, extraArgs = None):
             '-DCMAKE_INSTALL_PREFIX="{instDir}" '
             '-DCMAKE_PREFIX_PATH="{depsInstDir}" '
             '-DCMAKE_BUILD_TYPE={config} '
+            '-DBUILD_SHARED_LIBS=OFF'
             '{osx_rpath} '
             '{generator} '
             '{toolset} '
@@ -1377,7 +1378,7 @@ def InstallUSD(context, force, buildArgs):
             extraArgs.append('-DPXR_ENABLE_PYTHON_SUPPORT=OFF')
 
         if context.buildShared:
-            extraArgs.append('-DBUILD_SHARED_LIBS=ON')
+            extraArgs.append('-DBUILD_SHARED_LIBS=OFF')
         elif context.buildMonolithic:
             extraArgs.append('-DPXR_BUILD_MONOLITHIC=ON')
 
