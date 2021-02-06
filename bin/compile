@@ -10,6 +10,6 @@ echo "test" | indent
 
 python --version
 
-python USD/build_scripts/build_usd.py $1/USD --no-imaging --no-examples --no-tutorials --no-usdview --verbose | indent
+python USD/build_scripts/build_usd.py $1/USD
 
 echo "DONE" | indent
