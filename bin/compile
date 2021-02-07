@@ -8,6 +8,6 @@ echo "-----> Installing USD"
 
 echo "test" | indent
 
-python USD/build_scripts/build_usd.py $1/USD --no-usdview --no-imaging --no-examples --no-tutorials --no-usdview | indent
+python USD/build_scripts/build_usd.py $1/USD --no-usdview --no-imaging --no-examples --no-tutorials | indent
 
 echo "DONE" | indent
