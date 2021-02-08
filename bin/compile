@@ -6,8 +6,6 @@ indent() {
 
 echo "-----> Installing USD"
 
-echo "test" | indent
-
 python USD/build_scripts/build_usd.py $1/USD --no-imaging --verbose | indent
 
 echo "DONE" | indent
